@@ -1,0 +1,80 @@
+:root{
+    --green: #3ec64b;
+    --white: #ffff;
+    --shadow: 0.1rem 0.1rem 0.5rem black;
+    --gradient: linear-gradient(45deg,rgb(103, 194, 103), rgb(21, 173, 110));
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: var(--white);
+    background: var(--gradient);
+    background-position: center;
+    background-size: cover;
+    font-family: "Raleway";
+    min-height: 100vh;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: rgba(92, 95, 88, 0.295);
+    backdrop-filter: blur(1.5rem);
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+}
+fieldset button{
+    width: 100%;
+    background: var(--gradient);
+    padding: 0.5rem 1rem;
+    font-family: "Raleway";
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 3rem;
+    color: var(--white);
+    box-shadow: var(--shadow);
+    margin-top: 2rem;
+}
+fieldset div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    gap: 1rem;
+}
+fieldset div label{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #dafcdd;
+}
+fieldset div input{
+    background: rgba(161, 226, 161, 0.705);
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    box-shadow: var(--shadow);
+    transition: 0.3s ease-in-out;
+}
+fieldset div input:hover{
+    background: var(--gradient);
+}
+
